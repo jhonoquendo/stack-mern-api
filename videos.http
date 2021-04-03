@@ -1,0 +1,23 @@
+
+@api = http://localhost:3000
+
+GET {{api}}/videos
+
+###
+GET {{api}}/video/1
+
+###
+POST {{api}}/videos
+content-type: application/json
+
+{
+    "url": "prueba",
+    "title": "Jhon Oquendo",
+    "description": "Este es un video"
+}
+
+###
+PUT {{api}}/video/2
+
+###
+DELETE {{api}}/video/2
